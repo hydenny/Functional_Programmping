@@ -1,3 +1,5 @@
+<script>const log = console.log;</script>
+
 ### 사용자 정의 이터러블을 통해 알아보기
 
 <script>
@@ -34,13 +36,4 @@
   log(iter3.next());
   log(iter3.next());
   log(iter3.next());
-</script>
-
-## 전개 연산자
-
-<script>
-  console.clear();
-  const a = [1, 2];
-  // a[Symbol.iterator] = null;
-  log([...a, ...arr, ...set, ...map.keys()]);
 </script>
